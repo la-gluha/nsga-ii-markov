@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="nsga_II__c_code"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/nsga-II_c_code/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/enviro/mingw64/bin/mingw32-make.exe -f &quot;D:/nsga-II_c_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/enviro/mingw64/bin/mingw32-make.exe -f &quot;D:/nsga-II_c_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/enviro/mingw64/bin/mingw32-make.exe -f &quot;D:/nsga-II_c_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/enviro/mingw64/bin/mingw32-make.exe -f &quot;D:/nsga-II_c_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="nsga_II__c_code">
+				<Option output="D:/nsga-II_c_code/cmake-build-debug/nsga_II__c_code.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/nsga-II_c_code/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/nsga-II_c_code/nsga2code"/>
+					<Add directory="D:/enviro/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/enviro/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/enviro/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/enviro/mingw64/bin/mingw32-make.exe -f &quot;D:/nsga-II_c_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 nsga_II__c_code"/>
+					<CompileFile command="D:/enviro/mingw64/bin/mingw32-make.exe -f &quot;D:/nsga-II_c_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/enviro/mingw64/bin/mingw32-make.exe -f &quot;D:/nsga-II_c_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/enviro/mingw64/bin/mingw32-make.exe -f &quot;D:/nsga-II_c_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="nsga_II__c_code/fast">
+				<Option output="D:/nsga-II_c_code/cmake-build-debug/nsga_II__c_code.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/nsga-II_c_code/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/nsga-II_c_code/nsga2code"/>
+					<Add directory="D:/enviro/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/enviro/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/enviro/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/enviro/mingw64/bin/mingw32-make.exe -f &quot;D:/nsga-II_c_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 nsga_II__c_code/fast"/>
+					<CompileFile command="D:/enviro/mingw64/bin/mingw32-make.exe -f &quot;D:/nsga-II_c_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/enviro/mingw64/bin/mingw32-make.exe -f &quot;D:/nsga-II_c_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/enviro/mingw64/bin/mingw32-make.exe -f &quot;D:/nsga-II_c_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/nsga-II_c_code/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/enviro/mingw64/bin/mingw32-make.exe -f &quot;D:/nsga-II_c_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/enviro/mingw64/bin/mingw32-make.exe -f &quot;D:/nsga-II_c_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/enviro/mingw64/bin/mingw32-make.exe -f &quot;D:/nsga-II_c_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/enviro/mingw64/bin/mingw32-make.exe -f &quot;D:/nsga-II_c_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/nsga-II_c_code/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/enviro/mingw64/bin/mingw32-make.exe -f &quot;D:/nsga-II_c_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/enviro/mingw64/bin/mingw32-make.exe -f &quot;D:/nsga-II_c_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/enviro/mingw64/bin/mingw32-make.exe -f &quot;D:/nsga-II_c_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/enviro/mingw64/bin/mingw32-make.exe -f &quot;D:/nsga-II_c_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/nsga-II_c_code/nsga2code/crossover.h">
+			<Option target="nsga_II__c_code"/>
+		</Unit>
+		<Unit filename="D:/nsga-II_c_code/nsga2code/decode.h">
+			<Option target="nsga_II__c_code"/>
+		</Unit>
+		<Unit filename="D:/nsga-II_c_code/nsga2code/func-con.h">
+			<Option target="nsga_II__c_code"/>
+		</Unit>
+		<Unit filename="D:/nsga-II_c_code/nsga2code/helloMex.cpp">
+			<Option target="nsga_II__c_code"/>
+		</Unit>
+		<Unit filename="D:/nsga-II_c_code/nsga2code/init.h">
+			<Option target="nsga_II__c_code"/>
+		</Unit>
+		<Unit filename="D:/nsga-II_c_code/nsga2code/input.h">
+			<Option target="nsga_II__c_code"/>
+		</Unit>
+		<Unit filename="D:/nsga-II_c_code/nsga2code/keepaliven.h">
+			<Option target="nsga_II__c_code"/>
+		</Unit>
+		<Unit filename="D:/nsga-II_c_code/nsga2code/mexTest.cpp">
+			<Option target="nsga_II__c_code"/>
+		</Unit>
+		<Unit filename="D:/nsga-II_c_code/nsga2code/mut.h">
+			<Option target="nsga_II__c_code"/>
+		</Unit>
+		<Unit filename="D:/nsga-II_c_code/nsga2code/nsga2.c">
+			<Option target="nsga_II__c_code"/>
+		</Unit>
+		<Unit filename="D:/nsga-II_c_code/nsga2code/nsga2_matlab.cpp">
+			<Option target="nsga_II__c_code"/>
+		</Unit>
+		<Unit filename="D:/nsga-II_c_code/nsga2code/rancon.h">
+			<Option target="nsga_II__c_code"/>
+		</Unit>
+		<Unit filename="D:/nsga-II_c_code/nsga2code/random.h">
+			<Option target="nsga_II__c_code"/>
+		</Unit>
+		<Unit filename="D:/nsga-II_c_code/nsga2code/ranking.h">
+			<Option target="nsga_II__c_code"/>
+		</Unit>
+		<Unit filename="D:/nsga-II_c_code/nsga2code/realcross2.h">
+			<Option target="nsga_II__c_code"/>
+		</Unit>
+		<Unit filename="D:/nsga-II_c_code/nsga2code/realinit.h">
+			<Option target="nsga_II__c_code"/>
+		</Unit>
+		<Unit filename="D:/nsga-II_c_code/nsga2code/realmut1.h">
+			<Option target="nsga_II__c_code"/>
+		</Unit>
+		<Unit filename="D:/nsga-II_c_code/nsga2code/report.h">
+			<Option target="nsga_II__c_code"/>
+		</Unit>
+		<Unit filename="D:/nsga-II_c_code/nsga2code/roullette.h">
+			<Option target="nsga_II__c_code"/>
+		</Unit>
+		<Unit filename="D:/nsga-II_c_code/nsga2code/select.h">
+			<Option target="nsga_II__c_code"/>
+		</Unit>
+		<Unit filename="D:/nsga-II_c_code/nsga2code/uniformxr.h">
+			<Option target="nsga_II__c_code"/>
+		</Unit>
+		<Unit filename="D:/nsga-II_c_code/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
