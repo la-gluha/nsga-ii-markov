@@ -30,31 +30,15 @@ void solveWithSVD(double **a, int m, int n, int rows, int cols, double *f, doubl
     double v[cols][cols];
     double w[cols];
 
-//    return;
-
-//    printf("%f", *((double *) a + n * (rows-1) + (cols-1)));
-
     for (int i = 0; i < rows; ++i) {
         for (int j = 0; j < cols; ++j) {
-//            printf("u_a[%d][%d] = %f\n", i, j, *((double *) a + n * i + j));
             u[i][j] = *((double *) a + n * i + j);
         }
     }
 
-//    return;
-
-//    for (int i = 0; i < rows; ++i){
-//        for (int j = 0; j < cols; ++j){
-//            printf("u[%d][%d] = %f\n", i, j, u[i][j]);
-//        }
-//    }
-//        printf("flag\n");
-//        printf("%d\n", i);
 /*/**********************************  需要修改  ********************************************/
 /*/**********************************  已经修改  ********************************************/
     svd((double **) u, rows, cols, w, (double **) v, cols, cols);
-//    return;
-//        printf("flag_svd\n");
     double wmax = 0.0;
     for (int j = 0; j < cols; j++) {
         if (w[j] > wmax) {
@@ -62,11 +46,8 @@ void solveWithSVD(double **a, int m, int n, int rows, int cols, double *f, doubl
         }
     }
 
-//      return;
-
     char *remCoeff = "";
     double wmin = 1.2139849586338064E-5;
-//        printf("%f\n", wmin);
 
 /*/**********************************  需要修改  ********************************************/
 /*/**********************************  已经修改  ********************************************/
@@ -74,26 +55,14 @@ void solveWithSVD(double **a, int m, int n, int rows, int cols, double *f, doubl
         if (w[j] < wmin) {
             w[j] = 0.0;
             remCoeff = append(remCoeff, " ");
-//                remCoeff = strcat(remCoeff, " ");
             char* num = malloc(sizeof j);
             sprintf(num, "%d", j);
-//            sprintf(remCoeff, "%s%d", remCoeff, j);
             append(remCoeff, num);
         }
     }
 
-//    for (int ti = 0; ti < rows; ti++){
-//        for (int tj = 0; tj < cols; tj++){
-//            printf("a[%d][%d] = %f\n", ti, tj, *((double *) a + rows * ti + tj));
-//        }
-//    }
-
-//        return;
-//        printf("remCoeff = %s\n", remCoeff);
     svdbksb((double **) u, rows, cols, w, (double **) v, cols, cols, rows, cols, f, alpha);
-//        return;
-//        printf("flag_svdbksb\n");
-//    printf("flag");
+
 }
 
 void svd(double **a, int am, int an, double *w, double **v, int vm, int vn){
@@ -105,8 +74,6 @@ void svd(double **a, int am, int an, double *w, double **v, int vm, int vn){
     double anorm = 0., g = 0., scale = 0.;
     //zliberror._assert(m>=n) ;
     double rv1[n];
-
-    //System.out.println("SVD beware results may not be sorted!");
 
     for (i = 0; i < n; i++) {
         l = i + 1;
@@ -311,12 +278,6 @@ void svd(double **a, int am, int an, double *w, double **v, int vm, int vn){
             w[k] = x;
         } //its
     }
-
-//    for (int aaa = 0; aaa < vm; aaa++){
-//        for (int bbb = 0; bbb < vn; bbb++){
-//            printf("v[%d][%d] = %f\n", aaa, bbb, *((double *) v + vn * aaa + bbb));
-//        }
-//    }
 }
 
 void svdbksb(double **u, int um, int un, double *w, double **v, int vm, int vn, int m, int n, double *b, double *x) {
@@ -333,7 +294,6 @@ void svdbksb(double **u, int um, int un, double *w, double **v, int vm, int vn, 
             s /= w[j];
         }
         tmp[j] = s;
-//        printf("tmp[%d] = %f\n", j, tmp[j]);
     }
 
     for (j = 0; j < n; j++) {
@@ -341,10 +301,8 @@ void svdbksb(double **u, int um, int un, double *w, double **v, int vm, int vn, 
         for (jj = 0; jj < n; jj++) {
             s += *((double *) v + vn * j + jj) * tmp[jj];
         }
-//        printf("s = %f\n", s);
         x[j] = s;
     }
-//    printf("lastLine_svdbksb\n");
 }
 
 double SIGN(double a, double b) {

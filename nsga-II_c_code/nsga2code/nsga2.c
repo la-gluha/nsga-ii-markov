@@ -212,15 +212,15 @@ main() {
     /*Get the input from the file input.h*/
 //    input(rep_ptr);
 
-    //输入的参数，这里直接写死用于对马尔可夫网络进行debug，算法正常后再使用input确定参数
-    nvar = 0, nchrom = 4, nfunc = 2, ncons = 0, popsize = 100, gener = 5;
+    // 需要输入的参数
+    nvar = 0, nchrom = 10, nfunc = 2, ncons = 0, popsize = 100, gener = 100;
     pcross = 0.9, optype = 1;
 
     for (i = 0; i < nchrom; i++) {
         vlen[i] = 15;
         chrom += vlen[i];
 
-        lim_b[i][0] = 0.0, lim_b[i][1] = 10.0;
+        lim_b[i][0] = 0.0, lim_b[i][1] = 1.0;
     }
 
     pmut_b = 0.015, seed = 0.5;
