@@ -1,6 +1,9 @@
 /*This is the program used to evaluate the value of the function & errors
 ************************************************************************/
 
+
+#include "math.h"
+
 void func(population *pop_ptr);
 
 void func(population *pop_ptr)
@@ -54,7 +57,15 @@ void func(population *pop_ptr)
       f[0] = x[0];
 //      printf("func_f[0] = %f\n", f[0]);
       // Second Fitness Function
-      f[1] = x[1];
+      float sum = 0.0;
+      for (int i = 1; i < nchrom; i++){
+          sum += x[i];
+      }
+      float g = 1+9/29.0*sum;
+      float h = 1- sqrtf(f[0]/g);
+      f[1] =  h*g;
+//      printf("f[0] = %d, sum = %d, g = %d, h = %d, f[0]/g = %d, f[1] = %d\n",
+//             f[0], sum, g, h, f[0]/g, f[1]);
       /*=========End Your Coding Upto This Point===============*/
 
       /******************************************************************/
